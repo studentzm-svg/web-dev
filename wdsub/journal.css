@@ -1,0 +1,194 @@
+body {
+  margin: 0px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+h1 {
+  width: 50%;
+  text-align: center;
+  margin: 10px auto;
+  position: static;
+}
+
+.title {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+  width: 100%;
+  margin: 10px auto;
+}
+
+#nav-menu {
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: space-evenly;
+  position: sticky;
+  top: 0px;
+  background-color: lightpink;
+}
+
+.nav-div {
+  width:20%;
+  text-align: center;
+  flex-grow: 1;
+  border-left: 1px black solid;
+  position: relative;
+  top: 0px;
+}
+
+.nav-div a {
+  display: inline-block;
+  padding: 10px 0px 15px;
+   background-color: rgba(255, 182, 193, 0.8);
+
+}
+
+.nav-div ul {
+  display: none;
+  position: absolute;
+  background-color: rgba(255, 182, 193, 0.8);
+  list-style-type: none;
+  padding-left: 0px;
+  margin: 0px;
+  width: 100%;
+}
+
+.nav-div:hover ul {
+  display: block;
+  font-weight: bolder;
+}
+
+.nav-div:hover {
+  font-weight: bold;
+  color: black;
+}
+
+.nav-div:hover a {
+  color: hotpink;
+}
+
+nav-spacer {
+  flex-grow: 0;
+  width: 0px;
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid lightgray;
+}
+
+.nav-div:hover ul {
+  display: block;
+}
+
+.nav-div ul a:hover {
+  background-color: black;
+}
+
+#main-content {
+  margin: 0px 15%;
+  background-color: rgba(255, 182, 193, 0.6);
+  padding: 5px 15px 5p;
+  margin-top: 15px;
+}
+
+#bg-img {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: -99;
+  width: 100vw;
+  border: 1px;
+  margin: 5px;
+}
+
+#preheader {
+  background-color: rgba(255, 182, 193);
+}
+
+.art-pic {
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid #2ca;
+  width: 30%;
+  float: right;
+  text-align: center;
+}
+
+.pic-div img {
+  width: 100px;
+  margin: 0px auto;
+}
+
+.pic-div p {
+  font-style: italic;
+  text-align: center;
+}
+
+#footer {
+  background-color: gray;
+  display: flex;
+  flex: 1 1 auto;
+  justify-content: space-evenly;
+}
+
+#published {
+  flex-grow: 1;
+  text-align: right;
+  margin: 0px 5%;
+}
+
+#address {
+  flex-grow: 1;
+  text-align: left;
+  margin: 0px 5%;
+  overflow: hidden;
+}
+
+#art-pic {
+  margin-right: 1 1 auto;
+  text-align: center;
+}
+
+.art-pic {
+  border: 1px solid gray;
+  float: right;
+}
+
+.artpic {
+  border: 1px solid gray;
+  float: left;
+  margin: 5px;
+}
+
+#picture {
+  width: 100px;
+  display: block;
+  margin: 0 auto;
+}
+
+#heading {
+  text-align: center;
+}
+
+.inline-example {
+  display: inline;
+}
+
+.artpic,
+.art-pic {
+  overflow: visible;
+}
+
+#hr {
+  float: clear;
+}
+
+.absolute-example {
+  position: absolute;
+  top: 0;
+  left: 2;
+}
