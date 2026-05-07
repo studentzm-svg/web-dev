@@ -3,10 +3,10 @@ const UNCHECKBOX ="<button onclick='crossItem(this)'><svg viewBox='0 0 512 512' 
 
 let itemInput = document.getElementById("item-input");
 let list = document.getElementById("list");
-if (document.cookie != "") loadItems();
+//if (document.cookie != "") loadItems();
 
 //UNCOMMENT THIS LINE WHEN READY FOR PUBLISH!!!!!!!!!!!!!!!
-//itemInput.focus();
+itemInput.focus();
 
 document.addEventListener("keydown", (key) => {
   console.log(key.code);
@@ -44,7 +44,7 @@ function uncrossItem(elem) {
   parentLI.style.color = "black";
   parentLI.innerHTML = UNCHECKBOX + parentLI.innerText;
 }
-
+/*
 function saveItems() {
   document.cookie = "items=" + list.innerHTML;
   console.log(document.cookie);
@@ -53,7 +53,7 @@ function saveItems() {
 function loadItems() {
  let cookieArr = document.cookie.substring(6);
   list.innerHTML = cookieArr;
-}
+}*/
 
 
 
